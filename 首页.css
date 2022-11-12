@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*清除默认代码片段*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd {
+    margin: 0;
+    padding: 0;
+}
+/* 去除列表默认样式 */
+ul,
+ol {
+    list-style: none;
+}
+/* 去除a标签默认下划线，并设置默认文字颜色 */
+a {
+    text-decoration: none;
+}
+
+.video-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* 层级关系 */
+    z-index: -1;
+}
+.video-bg video {
+    width: 100%;
+    height: 100%;
+    /* 视频全屏 */
+    object-fit: cover;
+}
+/* 导航栏 */
+.nav {
+    height: 106px;
+    /* 弹性布局 */
+    display: flex;
+    /* 子盒子水平居中 */
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.nav .logo {
+    float: left;
+}
+.nav .logo img{
+    height: 25px;
+    margin-left: 91px;
+}
+.nav ul {
+    /* padding-bottom: 0px; */
+    margin-right: 90px;
+}
+.nav ul li  {
+    float: left;
+    /* line-height: 106px; */
+    height: 21.5px;
+    margin-left: 60px;
+    padding-bottom: 5px;
+    /* background-color: blueviolet; */
+}
+.nav ul li:first-child{
+    border-bottom: 2px solid #babbbab5;
+}
+a {
+    color: #fff;
+}
+/* 导航栏结束 */
+/* 内容 */
+.iphone {
+    position: relative;
+    margin-right: 60px;
+}
+.iphone .iphone-mp4 video {
+    position: absolute;
+    width: 260px;
+    height: 564px;
+    margin: 18px 20px;
+}
+.iphone-case {
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    background-image: url(https://ci.xiaohongshu.com/3ca6607e-d4a5-4cb9-b455-a746713d8283);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* 内容结束 */
